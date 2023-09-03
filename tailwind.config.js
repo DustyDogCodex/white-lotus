@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
         backgroundImage: {
-            'hero-bg-img': "url('/src/assets/hero-bg.jpg')"
+            'hero-bg-img': "url('/src/assets/hero-bg.jpg')",
+            'nav-hover': 'linear-gradient(90deg, #2AF598 0%, #009EFD 100%)'
         }
     },
   },
