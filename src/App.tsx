@@ -4,6 +4,7 @@ import useMediaQuery from './hooks/useMediaQuery'
 import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Overview from './components/Overview'
+import Accomodations from './components/Accomodations'
 
 function App() {
     //using state to identify the current page the user is browser
@@ -21,6 +22,7 @@ function App() {
             />
             <Hero />
             <Overview />
+            <Accomodations />
         </>
     )
 }
