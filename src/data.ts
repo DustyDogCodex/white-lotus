@@ -6,6 +6,11 @@ import room5 from './assets/room-5.jpg'
 import wellness from './assets/wellness-experience.jpg'
 import snorkel from './assets/snorkel-safari.jpeg'
 import spa from './assets/spa.jpg'
+import romantic from './assets/romatic.jpg'
+import paddleboard from './assets/paddleboard.jpg'
+import sunset from './assets/sunset.jpg'
+import tour from './assets/jeep-tour.jpg'
+import helicopter from './assets/helicopter.jpg'
 
 //array with objects containing info about accomodations
 export type AccomodationsProps = {
@@ -58,5 +63,13 @@ export const amenities: AmenitiesProps[] = [
         image: spa,
         summary: 'Discover true serenity at our one-of-a-kind spa nestled amidst lush groves and the tranquil lagoon of Bora Bora. Our oasis of relaxation offers a harmonious blend of nature and rejuvenating treatments. Picture yourself surrounded by swaying palm trees, the gentle rustling of leaves, and the soothing sounds of water, as you embark on a journey of pure bliss.'
     }
+]
+
+export const mediaImages: string[] = [
+    romantic,
+    sunset,
+    helicopter,
+    paddleboard,
+    tour
 ]
 

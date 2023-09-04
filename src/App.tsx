@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import Overview from './components/Overview'
 import Accomodations from './components/Accomodations'
 import Amenities from './components/Amenities'
+import Media from './components/Media'
 
 function App() {
     //using state to identify the current page the user is browser
@@ -25,6 +26,7 @@ function App() {
             <Overview />
             <Accomodations />
             <Amenities />
+            {/* <Media /> */}
         </>
     )
 }

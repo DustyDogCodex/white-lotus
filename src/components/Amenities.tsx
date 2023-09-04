@@ -3,15 +3,14 @@ import { amenities } from "../data"
 
 function Amenities() {
     const { scrollYProgress } = useScroll()
-    const scale = useTransform(scrollYProgress, [0, 0.6], [0.2, 1])
+    const scale = useTransform(scrollYProgress, [0, 0.6], [0.4, 1])
 
     return (
         <section
             id="amenities"
-            className="my-20 px-10 mx-auto bg-neutral-200/60 flex flex-col items-center justify-center" 
+            className="my-10 py-10 bg-neutral-200/60 flex flex-col items-center justify-center" 
         >
             <motion.div
-                className="pt-10"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -36,12 +35,12 @@ function Amenities() {
                     style={{
                         scaleY: scrollYProgress
                     }}
-                    className="flex items-center"
+                    className="flex flex-col md:flex-row items-center"
                 >
                     <img 
                         src={amenities[0].image} 
                         alt="" 
-                        className="rounded-lg h-full w-1/2"
+                        className="rounded-lg h-80 md:h-full w-full md:w-1/2"
                     />
                     <div
                         className="p-10"
@@ -64,8 +63,13 @@ function Amenities() {
                     style={{
                         scaleY: scrollYProgress
                     }}
-                    className="flex items-center"
+                    className="flex flex-col md:flex-row-reverse items-center"
                 >
+                    <img 
+                        src={amenities[1].image} 
+                        alt="" 
+                        className="rounded-lg h-80 md:h-full w-full md:w-1/2"
+                    />
                     <div
                         className="p-10"
                     >
@@ -76,11 +80,6 @@ function Amenities() {
                         </h3>
                         <p className="text-center text-lg mt-3">{amenities[1].summary}</p>
                     </div>
-                    <img 
-                        src={amenities[1].image} 
-                        alt="" 
-                        className="rounded-lg h-full w-1/2"
-                    />
                 </motion.div>
             </motion.div>
 
@@ -92,12 +91,12 @@ function Amenities() {
                     style={{
                         scaleY: scrollYProgress
                     }}
-                    className="flex items-center"
+                    className="flex flex-col md:flex-row items-center"
                 >
                     <img 
                         src={amenities[2].image} 
                         alt="" 
-                        className="rounded-lg h-full w-1/2"
+                        className="rounded-lg h-80 md:h-full w-full md:w-1/2"
                     />
                     <div
                         className="p-10"
