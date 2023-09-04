@@ -16,7 +16,7 @@ export const accomodations: AccomodationsProps[] = [
         image: room1
     },
     {
-        title: 'TWO BEDROOM PREMIER BEACHFRONT VILLA',
+        title: 'TWO BEDROOM PREMIER BEACHFRONT VILLA WITH PRIVATE POOL',
         image: room2
     },
     {

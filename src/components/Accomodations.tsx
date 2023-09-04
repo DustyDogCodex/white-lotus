@@ -17,29 +17,29 @@ function Accomodations() {
     return (
         <section
             id="accomodations"
-            className=""
+            className="p-5"
         >
             <h2 className="text-2xl font-thin text-center">ACCOMODATIONS</h2>
 
             <motion.div
-                    ref={slider}
-                    whileTap={{ cursor: 'grabbing' }}
-                    className="cursor-grab overflow-hidden w-full"
+                ref={slider}
+                whileTap={{ cursor: 'grabbing' }}
+                className="mt-5 cursor-grab overflow-hidden w-full flex flex-col items-start justify-center"
+            >
+                <motion.div
+                    drag='x'
+                    dragConstraints={{ right: 0, left: -width }}
+                    className="flex gap-8"
                 >
-                    <motion.div
-                        drag='x'
-                        dragConstraints={{ right:0, left: -width }}
-                        className="flex gap-10"
-                    >
-                        {accomodations.map((room: AccomodationsProps, index: number) => 
-                            <SliderCard 
-                                key={index}
-                                title={room.title} 
-                                image={room.image}  
-                            />
-                        )}
-                    </motion.div>
+                    {accomodations.map((room: AccomodationsProps, index: number) => 
+                        <SliderCard 
+                            key={index}
+                            title={room.title} 
+                            image={room.image}  
+                        />
+                    )}
                 </motion.div>
+            </motion.div>
         </section>
     )
 }
