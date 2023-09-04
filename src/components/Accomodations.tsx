@@ -2,6 +2,8 @@ import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import SliderCard from "./SliderCard"
 import { accomodations, AccomodationsProps } from "../data"
+/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons" */
 
 function Accomodations() {
     const [ width, setWidth ] = useState<number>(0)
@@ -19,17 +21,40 @@ function Accomodations() {
             id="accomodations"
             className="p-5"
         >
-            <h2 className="text-2xl font-thin text-center">ACCOMODATIONS</h2>
-
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.75, delay: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+            >
+                <h2 className="text-3xl font-thin text-center">ACCOMODATIONS</h2>
+            </motion.div>
+            
+            {/* slider for displaying accomodations */}
             <motion.div
                 ref={slider}
                 whileTap={{ cursor: 'grabbing' }}
-                className="mt-5 cursor-grab overflow-hidden w-full flex flex-col items-start justify-center"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={{
+                    hidden: { opacity: 1, scale: 0 }, 
+                    visible: {
+                        opacity: 1,
+                        scale: 1,
+                        transition: { delayChildren: 0.3, staggerChildren: 0.2 }
+                    }
+                }}
+                className="mt-5 overflow-hidden w-full flex flex-col items-start md:items-center justify-center"
             >
                 <motion.div
                     drag='x'
                     dragConstraints={{ right: 0, left: -width }}
-                    className="flex gap-8"
+                    className="flex gap-8 cursor-grab"
                 >
                     {accomodations.map((room: AccomodationsProps, index: number) => 
                         <SliderCard 
@@ -39,6 +64,15 @@ function Accomodations() {
                         />
                     )}
                 </motion.div>
+                
+                {/* slide controller */}
+                {/* <div
+                    className="w-full flex items-center justify-center"
+                >
+                    <FontAwesomeIcon icon={faChevronLeft} style={{color: "#010813",}} />
+                    <p className="mx-5 text-sm">1/5</p>
+                    <FontAwesomeIcon icon={faChevronRight} style={{color: "#010813",}} />
+                </div> */}
             </motion.div>
         </section>
     )
