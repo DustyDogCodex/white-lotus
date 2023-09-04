@@ -3,7 +3,8 @@ import searchIcon from '../assets/searchIcon.svg'
 
 function Hero() {
     return (
-        <div 
+        <section
+            id="home"
             className="h-screen flex flex-col items-center bg-hero-bg-img bg-cover"
         >
             <motion.div
@@ -60,7 +61,7 @@ function Hero() {
             
             {/* this div adds a white smoke rising from the bottom effect which looks reallllllly coooooooooooooool */}
             <div className="absolute h-[75px] xs:h-[200px] bottom-0 w-full bg-[linear-gradient(180deg,_#ffffff00_0%,_#FFF_100%)]" />
-        </div>
+        </section>
     )
 }
 
