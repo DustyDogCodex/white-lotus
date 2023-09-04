@@ -85,7 +85,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                     >
                         <FontAwesomeIcon 
                             icon={faBars} 
-                            style={{color: "white", height:'30px', width:'30px'}} 
+                            style={{color: "black", height:'30px', width:'30px'}} 
                         />
                     </button>
                 }
