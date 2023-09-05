@@ -60,13 +60,13 @@ function Footer() {
             >
                 {/* address on the bottom */}
                 <div
-                    className="flex flex-col items-center my-3"
+                    className="flex flex-col items-center text-center my-3"
                 >
                     <span className="text-lg font-bold">Address</span>
                     <span>1234 Real Street, Real City, Real State, 00000</span>
                 </div>
 
-                <span className="pt-2 border-t-2 border-white">Created with ❤️ by &copy; 2023 Varun Malaviya</span>
+                <span className="pt-2 border-t-2 text-center border-white">Created with ❤️ by &copy; 2023 Varun Malaviya</span>
             </div>
             </div>
         </div>

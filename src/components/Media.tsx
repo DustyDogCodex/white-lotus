@@ -59,7 +59,7 @@ function Media() {
         >
             <h2 className="text-2xl font-thin text-white mb-5">Photo Gallery</h2>
             <div
-                className="relative h-[300px] md:h-[600px] w-[450px] md:w-[900px] overflow-hidden"
+                className="relative h-[300px] md:h-[600px] w-[350px] md:w-[900px] overflow-hidden"
             >
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.img 

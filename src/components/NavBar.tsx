@@ -51,12 +51,12 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
             className={`${topOfPage ? "" : "bg-sky-300"} fixed top-0 z-40 w-full flex items-center justify-center`}
         >
             <div
-                className='w-full flex items-center justify-between py-5 lg:w-4/5'
+                className='w-full flex items-center justify-between py-5 px-10 lg:w-4/5'
             >
                 {/* brand logo and name */}
                 <div
                     className='flex items-center justify-center'
-                >
+                >  
                     <img 
                         src={lotus} 
                         alt="brand logo" 
@@ -93,12 +93,12 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                     :
                     /* this is what NavBar will look like for smaller screens when menu is toggled off */
                     <button
-                        className="rounded-full bg-black/60 p-2 flex items-center justify-center hover:scale-125 transition duration-300"
+                        className="rounded-full p-2 flex items-center justify-center hover:scale-125 transition duration-300"
                         onClick={() => setMenuToggled(true)}
                     >
                         <FontAwesomeIcon 
                             icon={faBars} 
-                            style={{color: "black", height:'30px', width:'30px'}} 
+                            style={{color: "white", height:'30px', width:'30px'}} 
                         />
                     </button>
                 }
@@ -111,7 +111,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                         className={`${ aboveSmallScreens ? 'hidden' : '' } fixed ${ menuToggled ? 'top-0' : '-top-[320px]'} h-[320px] right-0 w-full bg-slate-300 rounded-b-xl ease-in-out duration-700`}
                     >
                         {/* X button on top to close menu */}
-                        <div className="flex justify-end px-4 pt-5">
+                        <div className="flex justify-end px-4 pt-5 mr-8">
                             <button 
                                 onClick={() => setMenuToggled(!menuToggled)}
                                 className="bg-blue-300 p-2 rounded-full flex items-center"
@@ -145,7 +145,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                                 setCurrentPage={setCurrentPage}
                             />
                             <Link
-                                page="Contact"
+                                page="Gallery"
                                 currentPage={currentPage}
                                 setCurrentPage={setCurrentPage}
                             />
