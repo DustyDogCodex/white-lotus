@@ -53,7 +53,8 @@ function Media() {
     }
 
     return (
-        <div
+        <section
+            id="gallery"
             className="w-full h-full flex flex-col justify-center items-center bg-black py-10 px-3"
         >
             <h2 className="text-2xl font-thin text-white mb-5">Photo Gallery</h2>
@@ -96,7 +97,7 @@ function Media() {
                     />
                 </div>  
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -3,7 +3,7 @@ import { amenities } from "../data"
 
 function Amenities() {
     const { scrollYProgress } = useScroll()
-    const scale = useTransform(scrollYProgress, [0, 0.6], [0.4, 1])
+    const scale = useTransform(scrollYProgress, [0, 0.6], [0.5, 1])
 
     return (
         <section

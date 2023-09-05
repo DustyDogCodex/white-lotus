@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import useMediaQuery from '../hooks/useMediaQuery'
 import lotus from '../assets/white-lotus.svg'
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -17,7 +17,7 @@ const Link = ({ page, currentPage, setCurrentPage }: LinkProps) => {
 
     return(
         <AnchorLink 
-            className={`${currentPage === lowerCasePage ? "text-yellow" : ""} text-2xl text-white cursor-pointer hover:bg-nav-hover hover:bg-clip-text hover:text-transparent transition duration-500 hover:no-underline`} 
+            className={`${currentPage === lowerCasePage ? "text-amber-400" : ""} text-2xl text-white cursor-pointer hover:bg-nav-hover hover:bg-clip-text hover:text-transparent transition duration-500 hover:no-underline`} 
             href={`#${lowerCasePage}`}
             onClick={() => setCurrentPage(lowerCasePage)}
         >
@@ -33,12 +33,25 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
     //checking to see if window is above a small screen with custom hook
     const aboveSmallScreens: boolean = useMediaQuery("(min-width: 768px)")
 
+    //determining if navbar is at top of page or not.
+    const [ topOfPage, setTopOfPage ] = useState(true)
+
+    useEffect(() => {
+        //using handleScroll to determine if user is browsing top section of the website
+        //this is done to control the background color of the navbar. If user scrolls down the website, bg color changes to red
+        const handleScroll = () => {
+            window.scrollY === 0 ? setTopOfPage(true) : setTopOfPage(false)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
     return (
         <nav
-            className='flex items-center justify-center'
+            className={`${topOfPage ? "" : "bg-sky-300"} fixed top-0 z-40 w-full flex items-center justify-center`}
         >
             <div
-                className="fixed top-0 z-10 w-full flex items-center justify-between pt-10 mx-auto px-10 lg:w-4/5"
+                className='w-full flex items-center justify-between py-5 lg:w-4/5'
             >
                 {/* brand logo and name */}
                 <div
@@ -72,7 +85,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                             setCurrentPage={setCurrentPage}
                         />
                         <Link
-                            page="Contact"
+                            page="Gallery"
                             currentPage={currentPage}
                             setCurrentPage={setCurrentPage}
                         />
@@ -80,7 +93,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                     :
                     /* this is what NavBar will look like for smaller screens when menu is toggled off */
                     <button
-                        className="rounded-full bg-red p-2 flex items-center justify-center hover:scale-125 transition duration-300"
+                        className="rounded-full bg-black/60 p-2 flex items-center justify-center hover:scale-125 transition duration-300"
                         onClick={() => setMenuToggled(true)}
                     >
                         <FontAwesomeIcon 
