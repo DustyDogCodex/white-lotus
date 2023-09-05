@@ -1,88 +1,98 @@
 import { mediaImages } from "../data"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
 function Media() {
-    const [position, setPosition] = useState<number>(0)
+    const [ position, setPosition ] = useState<number>(0)
+    const [ direction, setDirection ] = useState<string>('')
     
-    const onRight = () => {
-        if(position < mediaImages.length - 1){
+    const nextImage = () => {
+        setDirection('right')
+        if(position === mediaImages.length - 1){
+            setPosition(0)
+        } else {
             setPosition(position + 1)
         }
     }
 
-    const onLeft = () => {
-        if(position > 0){
+    const prevImage = () => {
+        setDirection('left')
+        if(position === 0){
+            setPosition(mediaImages.length - 1)
+        } else {
             setPosition(position - 1)
         }
     }
 
-    /* {mediaImages.map((image: string, index: number) => 
-                        <motion.div
-                            key={index}
-                            initial='hidden'
-                            animate={{
-                                rotate: 0,
-                                left: `${(index - position) * 60 - 30}vw`,
-                                scale: index === position ? 1 : 0.8,
-                            }}
-                            transition={{
-                                type: "spring",
-                                stiffness: 260,
-                                damping: 20,
-                            }}
-                        >
-                            <img 
-                                src={image} 
-                                alt="" 
-                                className="w-[400px] h-[400px] rounded-lg"
-                            />
-                        </motion.div>
-                    )} */
+    //variants object for motion.img
+    const variants:{} = {
+        initial:{  
+            opacity: 0, 
+            x: direction === 'right' ? 100 : -100 
+        },
+        animate: { 
+            opacity: 1, 
+            x: 0,
+            transition: {
+                x: { 
+                    type: 'spring',
+                    stiffness: 300,
+                    damping: 30
+                },
+                opacity: {
+                    duration: 0.2
+                }
+            }
+        },
+        exit:{ 
+            opacity: 0, 
+            x: direction === 'left' ? -100 : 100 
+        }
+    }
 
-        {/* slide controller */}
-                {/* <div
-                    className="w-full flex items-center justify-center"
-                >
-                    
-                </div>
- */}
     return (
-        /* container div */
         <div
-            className="w-full h-full flex justify-center items-center bg-black py-10 px-3"
+            className="w-full h-full flex flex-col justify-center items-center bg-black py-10 px-3"
         >
-            {/* slideshow div */}
+            <h2 className="text-2xl font-thin text-white mb-5">Photo Gallery</h2>
             <div
-                className="relative"
+                className="relative h-[300px] md:h-[600px] w-[450px] md:w-[900px] overflow-hidden"
             >
-                <img 
-                    src={mediaImages[0]} 
-                    alt="images" 
-                    className="rounded-lg"     
-                />
+                <AnimatePresence initial={false} custom={direction}>
+                    <motion.img 
+                        key={mediaImages[position]}
+                        src={mediaImages[position]} 
+                        alt="images" 
+                        className="rounded-lg h-full w-full" 
+                        variants={variants}  
+                        initial="initial"
+                        animate='animate'
+                        exit='exit'
+                        custom={direction}
+                    />
+                </AnimatePresence>
 
                 {/* button to go left */}
                 <div
-                    className="absolute top-[45%] left-3 cursor-pointer p-2 flex items-center rounded-full hover:bg-indigo-600"
+                    className="absolute top-[45%] left-3 cursor-pointer p-2 flex items-center rounded-full bg-black/70 transition duration-300 hover:bg-indigo-600"
                 >
                     <FontAwesomeIcon 
                         icon={faChevronLeft} 
                         style={{color: "white", height:'30px', width:'30px'}} 
-                        onClick={onLeft}
+                        onClick={prevImage}
                     />
                 </div> 
 
                 {/* button to go right */} 
                 <div
-                    className="absolute top-[45%] right-3 cursor-pointer p-2 flex items-center rounded-full hover:bg-indigo-600"
+                    className="absolute top-[45%] right-3 cursor-pointer p-2 flex items-center rounded-full bg-black/70 transition duration-300 hover:bg-indigo-600"
                 >
                     <FontAwesomeIcon 
                         icon={faChevronRight} 
                         style={{color: "white", height:'30px', width:'30px'}}
-                        onClick={onRight}
+                        onClick={nextImage}
                     />
                 </div>  
             </div>
