@@ -8,7 +8,7 @@ function Amenities() {
     return (
         <section
             id="amenities"
-            className="my-10 py-10 bg-neutral-200/60 flex flex-col items-center justify-center" 
+            className="mt-10 py-10 bg-neutral-200/60 flex flex-col items-center justify-center" 
         >
             <motion.div
                 initial="hidden"

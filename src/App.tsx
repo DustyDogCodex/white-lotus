@@ -26,7 +26,7 @@ function App() {
             <Overview />
             <Accomodations />
             <Amenities />
-            {/* <Media /> */}
+            <Media />
         </>
     )
 }

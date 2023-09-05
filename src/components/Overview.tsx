@@ -7,7 +7,7 @@ function Overview() {
             className="flex items-center justify-center p-10 my-10"
         >
             <motion.div
-                className="p-5 bg-slate-100 font-thin lg:w-1/5"
+                className="p-5 bg-slate-100 font-thin lg:w-2/5 xl:w-1/5"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}

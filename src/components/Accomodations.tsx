@@ -49,7 +49,7 @@ function Accomodations() {
                         transition: { delayChildren: 0.3, staggerChildren: 0.2 }
                     }
                 }}
-                className="mt-5 overflow-hidden w-full flex flex-col items-start md:items-center justify-center"
+                className="mt-5 py-10 overflow-hidden w-full flex flex-col items-start lg:items-center justify-center"
             >
                 <motion.div
                     drag='x'
