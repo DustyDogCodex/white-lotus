@@ -19,17 +19,7 @@ function Media() {
         }
     }
 
-    return (
-        <div
-            className="w-full h-full overflow-hidden flex justify-center items-center bg-black py-10"
-        >
-            <div
-                className="flex flex-col"
-            >
-                <div
-                    className="flex w-full"
-                >
-                    {mediaImages.map((image: string, index: number) => 
+    /* {mediaImages.map((image: string, index: number) => 
                         <motion.div
                             key={index}
                             initial='hidden'
@@ -50,25 +40,51 @@ function Media() {
                                 className="w-[400px] h-[400px] rounded-lg"
                             />
                         </motion.div>
-                    )}
-                </div>
+                    )} */
 
-                {/* slide controller */}
-                <div
+        {/* slide controller */}
+                {/* <div
                     className="w-full flex items-center justify-center"
+                >
+                    
+                </div>
+ */}
+    return (
+        /* container div */
+        <div
+            className="w-full h-full flex justify-center items-center bg-black py-10 px-3"
+        >
+            {/* slideshow div */}
+            <div
+                className="relative"
+            >
+                <img 
+                    src={mediaImages[0]} 
+                    alt="images" 
+                    className="rounded-lg"     
+                />
+
+                {/* button to go left */}
+                <div
+                    className="absolute top-[45%] left-3 cursor-pointer p-2 flex items-center rounded-full hover:bg-indigo-600"
                 >
                     <FontAwesomeIcon 
                         icon={faChevronLeft} 
-                        style={{color: "white",}} 
+                        style={{color: "white", height:'30px', width:'30px'}} 
                         onClick={onLeft}
                     />
-                    <p className="mx-5 text-white">1/5</p>
+                </div> 
+
+                {/* button to go right */} 
+                <div
+                    className="absolute top-[45%] right-3 cursor-pointer p-2 flex items-center rounded-full hover:bg-indigo-600"
+                >
                     <FontAwesomeIcon 
                         icon={faChevronRight} 
-                        style={{color: "white",}} 
+                        style={{color: "white", height:'30px', width:'30px'}}
                         onClick={onRight}
                     />
-                </div>
+                </div>  
             </div>
         </div>
     )
