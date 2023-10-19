@@ -59,14 +59,14 @@ function Media() {
         >
             <h2 className="text-3xl text-white mb-5">Photo Gallery</h2>
             <div
-                className="relative h-[300px] md:h-[600px] w-[350px] md:w-full overflow-hidden lg:w-3/5" 
+                className="relative h-[300px] md:h-[800px] w-[350px] md:w-full overflow-hidden lg:w-3/5" 
             >
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.img 
                         key={mediaImages[position]}
                         src={mediaImages[position]} 
                         alt="images" 
-                        className="rounded-lg h-full w-full" 
+                        className="rounded-lg h-full w-full object-cover" 
                         variants={variants}  
                         initial="initial"
                         animate='animate'

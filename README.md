@@ -21,3 +21,9 @@ Image Credits:
 
 - Photo by <a href="https://unsplash.com/@dimhou?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dim Hou</a> on <a href="https://unsplash.com/photos/brown-wooden-outdoor-table-with-chairs-on-beach-during-daytime-a7wolaExEr8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
+Photo by <a href="https://unsplash.com/@seefromthesky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ishan @seefromthesky</a> on <a href="https://unsplash.com/photos/man-standing-in-bathroom-with-bathtub-next-to-body-of-water-EOAnV_C1a4w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@maxtscha?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maximilien T'Scharner</a> on <a href="https://unsplash.com/photos/woman-wearing-black-bikini-tap-swimming-on-body-of-water-between-trees-FD0Ga_KJTwM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+Photo by <a href="https://unsplash.com/@caapece?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danilo Capece</a> on <a href="https://unsplash.com/photos/close-up-photography-of-boat-Mn5vLHPLTuw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

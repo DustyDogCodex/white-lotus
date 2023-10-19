@@ -25,7 +25,7 @@ function Amenities() {
                 }}
             >
                 <h1
-                    className="mt-10 text-3xl mb-6 text-center"
+                    className="mt-10 text-5xl mb-6 text-center"
                 >
                     Why You Should Visit
                 </h1>
@@ -45,8 +45,15 @@ function Amenities() {
                 </div>
 
                 {/* right side */}
-                <div>
-                    <h3 className="text-2xl text-center">Plan your next retreat with us</h3>
+                <div className="h-full flex flex-col items-center justify-center p-3 md:p-10">
+                    <h3 className="text-3xl md:text-4xl text-center mb-8">Plan your next retreat with us</h3>
+                    <p className="text-center text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo ad repudiandae quam? Consequuntur dolore velit, reprehenderit voluptates dolores nostrum quia nisi quam maxime eveniet, nihil beatae, eos laudantium doloremque. Modi expedita nostrum omnis officiis impedit placeat quod obcaecati minima asperiores rerum corporis, quia at veniam aliquam sapiente rem nisi!</p>
+                    
+                    {/* buttons */}
+                    <div className="flex items-center gap-8 mt-5">
+                        <button className="px-5 py-2 bg-gradient-to-r from-sky-300 to-blue-400 text-white rounded-lg text-xl hover:scale-110 transition duration-300">Learn More</button>
+                        <button className="px-5 py-2 bg-gradient-to-r from-blue-400 to-sky-300 text-white rounded-lg text-xl hover:scale-110 transition duration-300">Plan My Trip</button>
+                    </div>
                 </div>
             </div>
         </section>

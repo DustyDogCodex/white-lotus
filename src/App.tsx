@@ -7,6 +7,7 @@ import Accomodations from './components/Accomodations'
 import Amenities from './components/Amenities'
 import Media from './components/Media'
 import Footer from './components/Footer'
+import Luxury from './components/Luxury'
 
 function App() {
     //using state to identify the current page the user is browser
@@ -26,6 +27,7 @@ function App() {
             <Overview />
             <Accomodations />
             <Amenities />
+            <Luxury />
             <Media />
             <Footer />
         </>
