@@ -51,7 +51,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
             className={`${topOfPage ? "" : "bg-sky-300"} fixed top-0 z-40 w-full flex items-center justify-center`}
         >
             <div
-                className='w-full flex items-center justify-between py-5 px-10 lg:w-4/5'
+                className='w-full flex items-center justify-between py-5 px-3 lg:w-4/5'
             >
                 {/* brand logo and name */}
                 <div
@@ -68,7 +68,7 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                 {/* menu options */}
                 {aboveSmallScreens
                     ?
-                    <div className="flex justify-between gap-20">
+                    <div className="flex justify-between gap-4 lg:gap-20">
                         <Link
                             page="Overview"
                             currentPage={currentPage}

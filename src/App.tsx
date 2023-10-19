@@ -1,6 +1,5 @@
 import './App.css'
 import { useState } from 'react'
-/* import useMediaQuery from './hooks/useMediaQuery' */
 import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Overview from './components/Overview'
