@@ -11,3 +11,13 @@ Image Credits:
   
 - Photo by <a href="https://unsplash.com/@marcbabin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marc Babin</a> on <a href="https://unsplash.com/photos/pineapple-juice-on-white-wooden-surface-22fsBrruHPQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
+- Photo by <a href="https://unsplash.com/@sotti?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shifaaz shamoon</a> on <a href="https://unsplash.com/photos/aerial-view-of-island-with-houses-at-daytime-_STLYdogRF4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@jarson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jarek Ceborski</a> on <a href="https://unsplash.com/photos/aerial-photography-of-people-sunbathing-beside-beach-TAKzoExgvkI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+- Photo by <a href="https://unsplash.com/@marcbabin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marc Babin</a> on <a href="https://unsplash.com/photos/white-ceramic-container-on-black-wooden-table-5LmQFGhZb_o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@xaviercoiffic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Xavier  Coiffic</a> on <a href="https://unsplash.com/photos/aerial-photography-of-island-beside-body-of-water-ByAHlRiTQjo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@dimhou?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dim Hou</a> on <a href="https://unsplash.com/photos/brown-wooden-outdoor-table-with-chairs-on-beach-during-daytime-a7wolaExEr8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

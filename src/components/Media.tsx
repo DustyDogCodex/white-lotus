@@ -57,9 +57,9 @@ function Media() {
             id="gallery"
             className="w-full h-full flex flex-col justify-center items-center bg-black py-10 px-3"
         >
-            <h2 className="text-2xl font-thin text-white mb-5">Photo Gallery</h2>
+            <h2 className="text-3xl text-white mb-5">Photo Gallery</h2>
             <div
-                className="relative h-[300px] md:h-[600px] w-[350px] md:w-full overflow-hidden"
+                className="relative h-[300px] md:h-[600px] w-[350px] md:w-full overflow-hidden lg:w-3/5" 
             >
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.img 
