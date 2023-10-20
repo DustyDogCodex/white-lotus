@@ -1,6 +1,48 @@
-# White Lotus
+<h1 align='center'>🌊🪷🍹 White Lotus 🍹🪷🌊</h1>
 
-Image Credits:
+<div align='center'>
+    <img 
+        src='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3U4Mzc0bzRlNGV5b3dsMHhkNG40dGFpY2IwOGhqZHlpYjhrN2l1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tTgRXNHrWUchb4Zcds/giphy.gif'
+        alt="Good Job"
+        width="300"    
+    >
+</div>
+
+Website for a fictional luxury resory, built using TypeScript, React, TailwindCSS and Framer-Motion.
+
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Customization](#customization)
+- [Acknowledgments](#acknowledgments)
+- [Image Credits](#image-credits)
+
+## Description
+This website is built for a fictional holiday resort. Using the power of TailwindCSS and Framer-Motion, the website boasts a modern, sleek and clean design coupled with beautiful animations that enhance its allure and X-factor. The design is responsive across a wide-variety of screens, ranging from smartphones to ultra-wdie desktop monitors. For most people, a holiday resort is a getaway from the regular hum-drum of life into a state of peace and serenity. MY goal for this website was to capture and showcase a sense of that peace and serenity to visitors of the website, which they can through the calming and serene color choices representing the blue sky and oceans as well as the clean and sleek nature of the website.
+
+## Features
+- Stylish and modern design.
+- Responsive design across a multitude of screen sizes.
+- Sleek and clean animations that add pizzazz to the website.
+- Easily changable images for improved customisability. 
+
+## Installation
+1. Make sure you have Node.js and npm installed on your system.
+2. Clone this repository: `git clone https://github.com/DustyDogCodex/white-lotus.git`
+3. Navigate to the project directory: `cd white-lotus`
+4. Install dependencies: `npm install`
+5. Start the development server: `npm run dev`
+
+## Customization
+You can customize this website easily by changing the images in the `data.ts` file, or by adding your preferred images to the assets folder and importing to the component of your choice. 
+
+## Acknowledgments
+- This website was created with love by Varun Malaviya.
+- Special thanks to the creators of TypeScript, React, Tailwind CSS and Framer-Motion for their amazing tools.
+- Special shoutout to the creators and cast of HBO's White Lotus for creating one of the funniest shows I've seen in my life!
+
+## Image Credits:
+
 - Photo by <a href="https://unsplash.com/@gaddafirusli?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Gaddafi Rusli</a> on <a href="https://unsplash.com/photos/aerial-view-photography-of-boats-on-seashore-2ueUnL4CkV8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 - Photo by <a href="https://unsplash.com/@marcbabin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marc Babin</a> on <a href="https://unsplash.com/photos/landscape-photography-of-two-pergolas-near-body-of-water-9IzrXQakxk0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -21,7 +63,7 @@ Image Credits:
 
 - Photo by <a href="https://unsplash.com/@dimhou?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dim Hou</a> on <a href="https://unsplash.com/photos/brown-wooden-outdoor-table-with-chairs-on-beach-during-daytime-a7wolaExEr8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
-Photo by <a href="https://unsplash.com/@seefromthesky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ishan @seefromthesky</a> on <a href="https://unsplash.com/photos/man-standing-in-bathroom-with-bathtub-next-to-body-of-water-EOAnV_C1a4w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@seefromthesky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ishan @seefromthesky</a> on <a href="https://unsplash.com/photos/man-standing-in-bathroom-with-bathtub-next-to-body-of-water-EOAnV_C1a4w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 - Photo by <a href="https://unsplash.com/@maxtscha?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maximilien T'Scharner</a> on <a href="https://unsplash.com/photos/woman-wearing-black-bikini-tap-swimming-on-body-of-water-between-trees-FD0Ga_KJTwM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
