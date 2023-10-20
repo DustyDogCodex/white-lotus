@@ -108,13 +108,13 @@ function NavBar({ currentPage, setCurrentPage }: LinkProps) {
                 {/* after user clicks on a link, the menu will close automatically */}
                 {(
                     <div 
-                        className={`${ aboveSmallScreens ? 'hidden' : '' } fixed ${ menuToggled ? 'top-0' : '-top-[320px]'} h-[320px] right-0 w-full bg-slate-300 rounded-b-xl ease-in-out duration-700`}
+                        className={`${ aboveSmallScreens ? 'hidden' : '' } fixed ${ menuToggled ? 'top-0' : '-top-[320px]'} h-[320px] right-0 w-full bg-sky-300 rounded-b-xl ease-in-out duration-700`}
                     >
                         {/* X button on top to close menu */}
                         <div className="flex justify-end px-4 pt-5 mr-8">
                             <button 
                                 onClick={() => setMenuToggled(!menuToggled)}
-                                className="bg-blue-300 p-2 rounded-full flex items-center"
+                                className="p-2 rounded-full flex items-center"
                             >
                                 <FontAwesomeIcon 
                                     icon={faX} 

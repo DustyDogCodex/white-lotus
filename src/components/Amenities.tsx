@@ -27,7 +27,7 @@ function Amenities() {
                 <h1
                     className="mt-10 text-5xl mb-6 text-center"
                 >
-                    What We Have To Offer
+                    What We Offer
                 </h1>
             </motion.div>
             

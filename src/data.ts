@@ -3,11 +3,11 @@ import room2 from './assets/room-2.jpeg'
 import room3 from './assets/room-3.jpg'
 import room4 from './assets/room-4.jpg'
 import room5 from './assets/room-5.jpg'
-import romantic from './assets/romatic.jpg'
-import paddleboard from './assets/paddleboard.jpg'
-import sunset from './assets/sunset.jpg'
-import tour from './assets/jeep-tour.jpg'
-import helicopter from './assets/helicopter.jpg'
+import Slider1 from './assets/Slider1.jpg'
+import Slider2 from './assets/Slider2.jpg'
+import Slider3 from './assets/Slider3.jpg'
+import Slider4 from './assets/Slider4.jpg'
+import Slider5 from './assets/Slider5.jpg'
 
 //array with objects containing info about accomodations
 export type AccomodationsProps = {
@@ -39,10 +39,10 @@ export const accomodations: AccomodationsProps[] = [
 ]
 
 export const mediaImages: string[] = [
-    romantic,
-    sunset,
-    helicopter,
-    paddleboard,
-    tour
+    Slider1,
+    Slider2,
+    Slider3,
+    Slider4,
+    Slider5
 ]
 

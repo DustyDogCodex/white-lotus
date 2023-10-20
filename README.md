@@ -25,5 +25,15 @@ Photo by <a href="https://unsplash.com/@seefromthesky?utm_content=creditCopyText
 
 - Photo by <a href="https://unsplash.com/@maxtscha?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maximilien T'Scharner</a> on <a href="https://unsplash.com/photos/woman-wearing-black-bikini-tap-swimming-on-body-of-water-between-trees-FD0Ga_KJTwM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
-Photo by <a href="https://unsplash.com/@caapece?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danilo Capece</a> on <a href="https://unsplash.com/photos/close-up-photography-of-boat-Mn5vLHPLTuw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@caapece?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danilo Capece</a> on <a href="https://unsplash.com/photos/close-up-photography-of-boat-Mn5vLHPLTuw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+- Photo by <a href="https://unsplash.com/@cauayanislandresort?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cauayan Island Resort</a> on <a href="https://unsplash.com/photos/woman-in-swimming-pool-during-daytime-7O1mQ9sXys0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+- Photo by <a href="https://unsplash.com/@goodspleen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alexandre Chambon</a> on <a href="https://unsplash.com/photos/two-brown-wooden-chairs-beside-the-wall-aapSemzfsOk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+- Photo by <a href="https://unsplash.com/@arobj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adam Jaime</a> on <a href="https://unsplash.com/photos/liquor-pouring-on-clear-shot-glass-dmkmrNptMpw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+- Photo by <a href="https://unsplash.com/@louishansel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Louis Hansel</a> on <a href="https://unsplash.com/photos/cooked-food-served-on-black-bowl-in24HLtOqyI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@nate_dumlao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nathan Dumlao</a> on <a href="https://unsplash.com/photos/three-person-holding-mug-and-glass-with-beverage-inside-71u2fOofI-U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   

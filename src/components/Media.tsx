@@ -49,12 +49,20 @@ function Media() {
     return (
         <section
             id="gallery"
-            className="w-full h-full flex justify-center items-center bg-black py-10 px-3"
+            className="w-full min-h-screen flex justify-center items-center bg-black py-10 px-3"
         >
-            <div
-                className="relative h-[300px] md:h-[800px] w-[350px] md:w-full overflow-hidden lg:w-3/5" 
+            <motion.div
+                className="relative h-[500px] sm:h-[600px] md:h-[1000px] w-[350px] sm:w-[600px] md:w-full overflow-hidden lg:w-3/5" 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.75 }}
+                variants={{
+                    hidden: { opacity: 0, y: -50 },
+                    visible: { opacity: 1, y: 0 }
+                }}
             >
-                <h2 className="text-3xl text-white text-center mb-5">Gallery</h2>
+                <h2 className="text-4xl text-white text-center mb-5">Gallery</h2>
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.img 
                         className="rounded-lg object-cover absolute w-full h-full" 
@@ -106,7 +114,7 @@ function Media() {
                         onClick={() => paginate(-1)}
                     />
                 </div>  
-            </div>
+            </motion.div>
         </section>
     )
 }

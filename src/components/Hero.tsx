@@ -15,7 +15,7 @@ function Hero() {
                 transition={{ duration: 0.75 }}
                 variants={{
                     hidden: { opacity: 0, y: -50 },
-                    visible: { opacity: 1, y: 0}
+                    visible: { opacity: 1, y: 0 }
                 }}
             >
                 <span>Discover Inner Serenity Amidst Luxury.</span>
@@ -30,7 +30,7 @@ function Hero() {
                 transition={{ duration: 0.75, delay: 0.5 }}
                 variants={{
                     hidden: { opacity: 0, y: -50 },
-                    visible: { opacity: 1, y: 0}
+                    visible: { opacity: 1, y: 0 }
                 }}
             >
                 Come visit us in beautiful <span className="font-bold hover:bg-gradient-to-r from-red-500 via-orange-400 to-amber-500 hover:bg-clip-text hover:text-transparent transition duration-500">Bora Bora, French Polynesia</span> 
@@ -44,7 +44,7 @@ function Hero() {
                 transition={{ duration: 0.75, delay: 1 }}
                 variants={{
                     hidden: { opacity: 0, y: 100 },
-                    visible: { opacity: 1, y: 0}
+                    visible: { opacity: 1, y: 0 }
                 }}
             >
                 <input 

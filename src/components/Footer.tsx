@@ -1,7 +1,7 @@
 function Footer() {
     return (
-        <div
-            className="w-full h-full flex flex-col md:flex-row items-center justify-center bg-footer-bg text-white py-10"
+        <footer
+            className="w-full h-full flex flex-col md:flex-row justify-center bg-footer-bg text-white py-8 px-5"
         >
             <div
                 className="flex flex-col md:flex-row items-center justify-center lg:w-3/5"
@@ -69,7 +69,7 @@ function Footer() {
                 <span className="pt-2 border-t-2 text-center border-white">Created with ❤️ by &copy; 2023 Varun Malaviya</span>
             </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
