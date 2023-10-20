@@ -89,6 +89,7 @@ function Media() {
                             } else if (swipe > swipeConfidenceThreshold) {
                                 paginate(-1)
                             }
+                            return e
                         }}
                     />
                 </AnimatePresence>
