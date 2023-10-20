@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
-import boats from '../assets/boats.jpg'
-import pineappleDrink from '../assets/pineapple-drink.jpg'
-import resort from "../assets/resort.jpg"
-import resortPool from "../assets/resort-pool.jpg"
-import beachBeds from "../assets/beach-beds.jpg"
-import beachFun from "../assets/beach-fun.jpg"
-import food from "../assets/food.jpg"
+import boats from '/images/boats.jpg'
+import pineappleDrink from '/images/pineapple-drink.jpg'
+import resort from "/images/resort.jpg"
+import resortPool from "/images/resort-pool.jpg"
+import beachBeds from "/images/beach-beds.jpg"
+import beachFun from "/images/beach-fun.jpg"
+import food from "/images/food.jpg"
 
 function Amenities() {
     return (

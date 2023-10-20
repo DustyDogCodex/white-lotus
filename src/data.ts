@@ -1,13 +1,13 @@
-import room1 from './assets/room-1.jpeg'
-import room2 from './assets/room-2.jpeg'
-import room3 from './assets/room-3.jpg'
-import room4 from './assets/room-4.jpg'
-import room5 from './assets/room-5.jpg'
-import Slider1 from './assets/Slider1.jpg'
-import Slider2 from './assets/Slider2.jpg'
-import Slider3 from './assets/Slider3.jpg'
-import Slider4 from './assets/Slider4.jpg'
-import Slider5 from './assets/Slider5.jpg'
+import room1 from '/images/room-1.jpeg'
+import room2 from '/images/room-2.jpeg'
+import room3 from '/images/room-3.jpg'
+import room4 from '/images/room-4.jpg'
+import room5 from '/images/room-5.jpg'
+import Slider1 from '/images/Slider1.jpg'
+import Slider2 from '/images/Slider2.jpg'
+import Slider3 from '/images/Slider3.jpg'
+import Slider4 from '/images/Slider4.jpg'
+import Slider5 from '/images/Slider5.jpg'
 
 //array with objects containing info about accomodations
 export type AccomodationsProps = {

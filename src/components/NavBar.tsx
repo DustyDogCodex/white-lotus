@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import useMediaQuery from '../hooks/useMediaQuery'
-import lotus from '../assets/white-lotus.svg'
+import lotus from '/images/white-lotus.svg'
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'

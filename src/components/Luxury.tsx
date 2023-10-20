@@ -1,6 +1,6 @@
-import Luxury1 from "../assets/Luxury1.jpg"
-import Luxury2 from "../assets/Luxury2.jpg"
-import Luxury3 from "../assets/Luxury3.jpg"
+import Luxury1 from "/images/Luxury1.jpg"
+import Luxury2 from "/images/Luxury2.jpg"
+import Luxury3 from "/images/Luxury3.jpg"
 import { motion } from "framer-motion"
 
 function Luxury() {
