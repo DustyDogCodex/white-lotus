@@ -115,16 +115,80 @@ function Amenities() {
                 </motion.div>
 
                 {/* right side */}
-                <div className="h-full flex flex-col items-center justify-center p-3 md:p-10">
-                    <h3 className="text-3xl md:text-4xl text-center mb-8">Plan your next retreat with us</h3>
-                    <p className="text-center text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo ad repudiandae quam? Consequuntur dolore velit, reprehenderit voluptates dolores nostrum quia nisi quam maxime eveniet, nihil beatae, eos laudantium doloremque. Modi expedita nostrum omnis officiis impedit placeat quod obcaecati minima asperiores rerum corporis, quia at veniam aliquam sapiente rem nisi!</p>
+                <motion.div 
+                    className="h-full flex flex-col items-center justify-center p-3 md:p-10"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.7 }}
+                    transition={{ duration: 0.8 }}
+                    variants={{
+                        hidden: { opacity: 0, y: -50 },
+                        visible: { opacity: 1, y: 0 }
+                    }}
+                >
+                    <motion.h3 
+                        className="text-3xl md:text-4xl text-center mb-8"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.75 }}
+                        variants={{
+                            hidden: { opacity: 0, y: -50 },
+                            visible: { opacity: 1, y: 0}
+                        }}
+                    >
+                        Plan your next retreat with us
+                    </motion.h3>
+                    <motion.p 
+                        className="text-center text-base md:text-lg"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.75, delay: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, y: -50 },
+                            visible: { opacity: 1, y: 0}
+                        }}
+                    >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem explicabo ad repudiandae quam? Consequuntur dolore velit, reprehenderit voluptates dolores nostrum quia nisi quam maxime eveniet, nihil beatae, eos laudantium doloremque. Modi expedita nostrum omnis officiis impedit placeat quod obcaecati minima asperiores rerum corporis, quia at veniam aliquam sapiente rem nisi!
+                    </motion.p>
                     
                     {/* buttons */}
-                    <div className="flex items-center gap-8 mt-5">
-                        <button className="px-5 py-2 bg-gradient-to-r from-sky-300 to-blue-400 text-white rounded-lg text-xl hover:scale-110 transition duration-300">Learn More</button>
-                        <button className="px-5 py-2 bg-gradient-to-r from-blue-400 to-sky-300 text-white rounded-lg text-xl hover:scale-110 transition duration-300">Plan My Trip</button>
-                    </div>
-                </div>
+                    <motion.div 
+                        className="flex items-center gap-8 mt-5"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.75, delay: 1.5 }}
+                        variants={{
+                            hidden: { opacity: 0, y: -50 },
+                            visible: { 
+                                opacity: 1, 
+                                y: 0,
+                                transition: { delayChildren: 0.3, staggerChildren: 0.2 } 
+                            }
+                        }}    
+                    >
+                        <motion.button 
+                            className="px-5 py-2 bg-gradient-to-r from-sky-300 to-blue-400 text-white rounded-lg text-xl hover:scale-110 transition duration-300"
+                            variants={{
+                                hidden: { opacity: 0, scale: 0.8 },
+                                visible: { opacity: 1, scale: 1 }
+                            }}
+                        >
+                            Learn More
+                        </motion.button>
+                        <motion.button 
+                            className="px-5 py-2 bg-gradient-to-r from-blue-400 to-sky-300 text-white rounded-lg text-xl hover:scale-110 transition duration-300"
+                            variants={{
+                                hidden: { opacity: 0, scale: 0.8 },
+                                visible: { opacity: 1, scale: 1 }
+                            }}
+                        >
+                            Plan My Trip
+                        </motion.button>
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     )
