@@ -27,22 +27,92 @@ function Amenities() {
                 <h1
                     className="mt-10 text-5xl mb-6 text-center"
                 >
-                    Why You Should Visit
+                    What We Have To Offer
                 </h1>
             </motion.div>
             
             {/* MAIN CONTENT */}
             <div className="py-20 px-5 grid lg:grid-cols-2 gap-5 lg:w-4/5">
                 {/* left side */}
-                <div className="grid grid-cols-2 grid-rows-6 gap-5 h-[100vh]">   
-                    <img className="row-span-2 object-cover h-full w-full" src={boats} alt="Boats on the beach" />
-                    <img className="row-span-1 object-cover h-full w-full" src={pineappleDrink} alt="Pineappe Mojito" />
-                    <img className="object-cover h-full w-full" src={resortPool} alt="Pool at the resort" />
-                    <img className="col-span-2 row-span-2 object-cover h-full w-full" src={beachFun} alt="Fun time at the beach!" />
-                    <img className="object-cover h-full w-full" src={beachBeds} alt="Beds at the beach" />
-                    <img className="row-span-2 object-cover h-full w-full" src={food} alt="View of a plate of fresh food" />
-                    <img className="object-cover h-full w-full" src={resort} alt="Resort" />
-                </div>
+                {/* staggered animation for img elements */}
+                <motion.div 
+                    className="grid grid-cols-2 grid-rows-6 gap-5 h-[100vh]"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 1, scale: 0 }, 
+                        visible: {
+                            opacity: 1,
+                            scale: 1,
+                            transition: { delayChildren: 0.3, staggerChildren: 0.2 }
+                        }
+                    }}
+                >   
+                    <motion.img
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }} 
+                        className="row-span-2 object-cover h-full w-full" 
+                        src={boats} 
+                        alt="Boats on the beach" 
+                    />
+                    <motion.img
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }} 
+                        className="row-span-1 object-cover h-full w-full" 
+                        src={pineappleDrink} 
+                        alt="Pineappe Mojito" 
+                    />
+                    <motion.img 
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }}
+                        className="object-cover h-full w-full" 
+                        src={resortPool} 
+                        alt="Pool at the resort" 
+                    />
+                    <motion.img 
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }}
+                        className="col-span-2 row-span-2 object-cover h-full w-full" 
+                        src={beachFun} 
+                        alt="Fun time at the beach!" 
+                    />
+                    <motion.img 
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }}
+                        className="object-cover h-full w-full" 
+                        src={beachBeds} 
+                        alt="Beds at the beach" 
+                    />
+                    <motion.img 
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }}
+                        className="row-span-2 object-cover h-full w-full" 
+                        src={food} 
+                        alt="View of a plate of fresh food" 
+                    />
+                    <motion.img 
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 }
+                        }}
+                        className="object-cover h-full w-full" 
+                        src={resort} 
+                        alt="Resort" 
+                    />
+                </motion.div>
 
                 {/* right side */}
                 <div className="h-full flex flex-col items-center justify-center p-3 md:p-10">

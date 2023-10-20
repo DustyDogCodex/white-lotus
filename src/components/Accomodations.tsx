@@ -2,8 +2,6 @@ import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import SliderCard from "./SliderCard"
 import { accomodations, AccomodationsProps } from "../data"
-/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons" */
 
 function Accomodations() {
     const [ width, setWidth ] = useState<number>(0)
@@ -31,7 +29,7 @@ function Accomodations() {
                     visible: { opacity: 1, x: 0 }
                 }}
             >
-                <h2 className="text-3xl font-thin text-center">ACCOMODATIONS</h2>
+                <h2 className="text-3xl text-center">ACCOMODATIONS</h2>
             </motion.div>
             
             {/* slider for displaying accomodations */}
@@ -64,15 +62,6 @@ function Accomodations() {
                         />
                     )}
                 </motion.div>
-                
-                {/* slide controller */}
-                {/* <div
-                    className="w-full flex items-center justify-center"
-                >
-                    <FontAwesomeIcon icon={faChevronLeft} style={{color: "#010813",}} />
-                    <p className="mx-5 text-sm">1/5</p>
-                    <FontAwesomeIcon icon={faChevronRight} style={{color: "#010813",}} />
-                </div> */}
             </motion.div>
         </section>
     )
