@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import searchIcon from '/images/searchIcon.svg'
+import searchIcon from '/images/SearchIcon.svg'
 
 function Hero() {
     return (
